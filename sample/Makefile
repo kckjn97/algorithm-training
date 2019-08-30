@@ -11,17 +11,17 @@ bin : main.cpp
 
 run :
 	make bin
-	./bin < input1.txt
+	make check
 
 cat:
 	cat main.cpp
 
 check:
-	./bin < input1.txt > result1.txt
-	diff result1.txt answer1.txt
+	./bin < input.txt > result.txt
+	diff result.txt answer.txt
 
 edit:
 	vim main.cpp
  
 clean :
-	@rm -rf *.o bin result*.txt
+	@rm -rf *.o bin result.txt
