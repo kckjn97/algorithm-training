@@ -23,5 +23,10 @@ check:
 edit:
 	vim main.cpp
  
+git:
+	make clean
+	git add .
+	git commit -am $(notdir $(CURDIR))
+	
 clean :
 	@rm -rf *.o bin result.txt
