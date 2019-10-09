@@ -16,6 +16,12 @@ run :
 cat:
 	cat main.cpp
 
+input:
+	vi input.txt
+
+answer:
+	vi answer.txt
+
 check:
 	./bin < input.txt > result.txt
 	diff result.txt answer.txt
