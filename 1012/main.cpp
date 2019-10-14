@@ -3,7 +3,6 @@
 #include <map>
 #include <set>
 #include <cstring>
-#include <algorithm>
 
 using namespace std;
 
@@ -30,7 +29,6 @@ int main() {
 			map[x][y] = i+1;		
 			vec.push_back({x, y});
 		}
-		sort(vec.begin(), vec.end());
 
 		bool changed;
 		do{
