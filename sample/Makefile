@@ -33,6 +33,7 @@ git:
 	make clean
 	git add .
 	git commit -am $(notdir $(CURDIR))
+	git push
 	
 clean :
 	@rm -rf *.o bin result.txt
